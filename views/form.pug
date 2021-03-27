@@ -1,8 +1,8 @@
 extends layout 
 
 block content
-
-  form#newForm(method="POST" action="/new")
-    input.formInput(type="text", name="name" placeholder = "Your name")
-    input.formInput(type="text", name="messageText" placeholder = "Your message")
-    button(type="submit") Add message
+  #formContainer 
+    form#newForm(method="POST" action="/new" )
+      input.formInput(type="text", name="name" placeholder = "Your name" required = true)
+      input.formInput(type="text", name="messageText" placeholder = "Your message" required = true)
+      button(type="submit") Add message

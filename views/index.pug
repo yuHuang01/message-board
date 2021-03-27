@@ -6,7 +6,7 @@ block content
   a(href="/new") Add your own message here!
 
   each mess in messages
-    div 
+    div.message
       h3= mess.user
       p= mess.text
       p= mess.added
