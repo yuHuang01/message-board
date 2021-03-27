@@ -3,6 +3,8 @@ extends layout
 block content
   h1= title
 
+  a(href="/new") Add your own message here!
+
   each mess in messages
     div 
       h3= mess.user
